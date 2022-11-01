@@ -4,7 +4,7 @@ const postBooks = async (request, response, next) => {
 
   console.log(request.body);
 
-  let {title, description, status} = request.body;
+  let {title, description, status, imgURL} = request.body;
   if (!title || !description || !status){
     next ('Request Failed');
   }
@@ -13,7 +13,8 @@ const postBooks = async (request, response, next) => {
     let book = new Book ({
       title,
       description,
-      status
+      status,
+      imgURL
     });
 
     book.save()

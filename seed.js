@@ -10,6 +10,7 @@ async function seed() {
     title: 'Fight Club',
     description: `Fight Club's estranged narrator leaves his lackluster job when he comes under the thrall of Tyler Durden, an enigmatic young man who holds secret after-hours boxing matches in the basements of bars. There, two men fight "as long as they have to."`,
     status: 'Finished',
+    imgURL: 'https://m.media-amazon.com/images/I/31nOrfDOvbL.jpg'
   });
 
   console.log(`Fight Club was created.`);
@@ -18,6 +19,7 @@ async function seed() {
     title: 'Moby Dick',
     description: `The story of Captain Ahab's quest to avenge the whale that 'reaped' his leg. The quest is an obsession and the novel is a diabolical study of how a man becomes a fanatic.`,
     status: 'Finished',
+    imgURL: 'https://m.media-amazon.com/images/I/81+3Wl6KVNL.jpg'
   });
 
   console.log(`Moby Dick was created.`);
@@ -26,6 +28,7 @@ async function seed() {
     title: 'Harry Potter and the Prisoner of Azkaban',
     description: `When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it's the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run - and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves... But perhaps most terrifying of all are the Dementors patrolling the school grounds, with their soul-sucking kiss.`,
     status: 'Finished',
+    imgURL: 'https://m.media-amazon.com/images/I/51DQeuJ5QDL.jpg'
   });
 
   console.log(`Harry Potter was created.`);
