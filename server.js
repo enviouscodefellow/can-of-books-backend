@@ -8,7 +8,8 @@ const mongoose = require('mongoose');
 const getBooks = require('./modules/getBooks.js');
 const postBooks = require('./modules/postBooks.js');
 const deleteBooks = require('./modules/deleteBooks.js');
-// const updateBooks = require('./modules/updateBooks.js');
+const updateBooks = require('./modules/updateBooks.js');
+
 const app = express();
 app.use(cors());
 
@@ -31,6 +32,8 @@ app.post('/books', postBooks);
 
 app.delete('/books/:id', deleteBooks);
 
+app.put('/books/:id', updateBooks);
+
 app.get('/', (request, response) => {
   response.status(200).send(`Welcome to the jungle baby.`)
 });
@@ -41,7 +44,6 @@ app.get('*', (request, response) => {
 
 //**FOR MODULARITY LATER*/
 
-// app.put('/books/:id', updateBooks);
 
 app.use ((error, request, response, next) =>{
   response.status(500).send(error);
